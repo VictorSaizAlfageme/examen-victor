@@ -3,13 +3,13 @@ class Database {
 	public static $db;
 	public static $con;
 	function Database(){
-		$this->user="be9e2ab390ad38";$this->pass="2d53ab79";$this->host="eu-cdbr-west-03.cleardb.nett";$this->ddbb="heroku_3b310a6ef45c319";
+		$this->user="be9e2ab390ad38";$this->pass="2d53ab79";$this->host="eu-cdbr-west-03.cleardb.net";$this->ddbb="heroku_3b310a6ef45c319";
 		//Copiar también la información de la conexión en la función de abajo connect()
 	}
 
 	function connect(){
 		//Copiar aquí también la info de la conexión
-		$this->user="be9e2ab390ad38";$this->pass="2d53ab79";$this->host="eu-cdbr-west-03.cleardb.nett";$this->ddbb="heroku_3b310a6ef45c319";
+		$this->user="be9e2ab390ad38";$this->pass="2d53ab79";$this->host="eu-cdbr-west-03.cleardb.net";$this->ddbb="heroku_3b310a6ef45c319";
 		$con = new mysqli($this->host,$this->user,$this->pass,$this->ddbb);
 		$con->query("set sql_mode=''");
 		return $con;
